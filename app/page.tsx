@@ -29,23 +29,35 @@ export default function Home() {
           I enjoy building scalable cloud infrastructure and
           continuously improving my DevOps skills.
         </p>
-
-        <div className="mt-8 flex justify-center gap-4">
-          <button className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg">
-            View Projects
-          </button>
-
-          <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg">
-            Contact Me
-          </button>
-        </div>
+<a        
+  href="#contact"
+  className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg inline-block"
+>
+  Contact Me
+</a>
       </section>
+<div className="mt-8 flex justify-center gap-4">
+  <a
+    href="#projects"
+    className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg inline-block"
+  >
+    View Projects
+  </a>
 
-      {/* About */}
-      <section className="mb-16 text-center">
-        <h2 className="text-3xl font-bold text-cyan-400 mb-6">
-          About Me
-        </h2>
+  <a
+    href="#contact"
+    className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg inline-block"
+  >
+    Contact Me
+  </a>
+</div>
+
+{/* About */}
+<section id="about" className="text-center">
+  <h2 className="text-3xl font-bold text-cyan-400 mb-6">
+    About Me
+  </h2>
+     
 
         <p className="max-w-4xl mx-auto text-gray-300 leading-8">
           I am Julius Olukorede, an aspiring Cloud and DevOps Engineer
@@ -58,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section className="mb-16">
+      <section id="skills" className="mb-16">
         <h2 className="text-3xl font-bold text-cyan-400 text-center mb-8">
           Skills
         </h2>
@@ -115,27 +127,50 @@ export default function Home() {
     </div>
     <div className="flex gap-3 mt-4">
   <a
-    href="https://github.com/yourusername/my-cloud-portfolio"
+
+    href="https://github.com/juliusolukorede/my-cloud-portfolio"
     target="_blank"
+    rel="noopener noreferrer"
     className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600"
-  >
-    GitHub
-  </a>
+>
+  GitHub
+</a>
+  
 
   <a
-    href="#"
+    href="https://my-cloud-portfolio-delta.vercel.app"
     target="_blank"
     className="bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400"
   >
     Live Demo
   </a>
+  
+  <a
+  href="https://www.linkedin.com/in/olumide-julius-a706a2416"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+>
+  LinkedIn
+</a>
+
+<a
+  href="/Julius_Olukorede_CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+>
+  Download CV
+</a>
+
 </div>
 
     <div className="bg-slate-800 p-6 rounded-xl shadow-lg">
       <h3 className="text-2xl font-semibold flex items-center gap-2">
   <FaMicrosoft className="text-cyan-400" />
   Azure Virtual Machine Lab
-</h3>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+</h3>      
+
 
       <p className="text-gray-300 mb-4">
         Created and managed Azure Virtual Machines while learning networking, storage, security and cloud administration.
@@ -148,9 +183,39 @@ export default function Home() {
     </div>
 
   </div>
+  <div className="bg-slate-800 p-6 rounded-xl shadow-lg">
+  <h3 className="text-2xl font-semibold">
+    Azure SQL Database Lab
+  </h3>
+
+  <p className="text-gray-300 mb-4">
+    Configured Azure SQL Server and Azure SQL Database using SSMS, created tables, and managed secure database connections.
+  </p>
+
+  <div className="flex gap-2 flex-wrap">
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">Azure SQL</span>
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">SSMS</span>
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">Database</span>
+  </div>
+</div>
+<div className="bg-slate-800 p-6 rounded-xl shadow-lg">
+  <h3 className="text-2xl font-semibold">
+    Azure Storage & Backup Lab
+  </h3>
+
+  <p className="text-gray-300 mb-4">
+    Configured Azure Storage Accounts and Recovery Services Vault to securely store data and create backup and recovery solutions for cloud resources.
+  </p>
+
+  <div className="flex gap-2 flex-wrap">
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">Azure Storage</span>
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">Recovery Services Vault</span>
+    <span className="bg-cyan-500 text-black px-3 py-1 rounded-full">Backup</span>
+  </div>
+</div>
 </section>
       {/* Contact */}
-      <section className="text-center">
+      <section id="contact" className="text-center">
         <h2 className="text-3xl font-bold text-cyan-400 mb-6">
           Contact Me
         </h2>
